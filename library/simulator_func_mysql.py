@@ -1424,8 +1424,8 @@ class simulator_func_mysql:
                 # all_item_db가 존재하고 현재 보유 중인 종목이 있는 경우
                 if self.is_simul_table_exist(self.db_name,"all_item_db") and len(self.get_data_from_possessed_item()) != 0:
                     self.print_info(min)
-                    self.update_all_db_by_min(min)
-                    self.update_all_db_etc()
+                    self.update_all_db_by_min(min) #분별 시세 업뎃
+                    self.update_all_db_etc() #수익률, 평가금액 등 업뎃
                     # 매도 함수
                     self.auto_trade_sell_stock(min, i)
                     # self.buy_stop 이 False 이고, 보유 자산이 있으면 실제 매수를 한다.

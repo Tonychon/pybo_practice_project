@@ -17,7 +17,7 @@ from pandas import DataFrame
 
 MARKET_KOSPI = 0
 MARKET_KOSDAQ = 10
-
+#sfgfgs
 
 # 콜렉팅에 사용되는 메서드를 모아 놓은 클래스
 class collector_api():
